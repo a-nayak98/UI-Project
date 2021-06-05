@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+
+/* Style For Section 1 */
+.container1 {
+  width: 100vw;
+  min-height: 110vh;
+}
+.background-img {
+  width: 100%;
+  /* opacity: 0.9; */
+  background-image: url("images/pexels-vaibhav-jadhav-3218467.jpg");
+  /* filter: brightness(50%); */
+  background-attachment: fixed;
+  background-size: cover;
+}
+.items {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+.items #svg {
+  top: 15px;
+  left: 840px;
+  position: absolute;
+}
+.items img {
+  margin-top: 7em;
+}
+.items h1 {
+  font-size: 4rem;
+  color: white;
+  margin-top: 100px;
+}
+.items p {
+  margin: auto;
+  width: 55vw;
+  font-size: 1.5em;
+  color: white;
+  padding: 20px;
+}
+.items .tri img {
+  margin-top: 150px;
+  text-align: center;
+  width: 60px;
+  height: 90px;
+}
+
+/* Style For Section2 */
+.container2 {
+  margin: auto;
+  width: 100vw;
+  height: 105vh;
+  background-color: rgba(243, 247, 247, 0.904);
+  text-align: center;
+}
+.container2 #head {
+  padding-top: 5em;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+}
+.container2 h1 {
+  font-size: 3.6rem;
+  margin-top: 0.4em;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .heading {
+  font-size: 1.5em;
+  margin-top: 1em;
+  /* margin: 20px; */
+  font-family: "Lato", sans-serif;
+}
+.item {
+  width: 30vw;
+  margin: 60px;
+}
+.item p {
+  font-size: 1.2rem;
+}
+/* Style For Section 3 */
+.grid-align {
+  width: 100vw;
+  height: 100vh;
+  background: url("images/ed-min.jpg");
+  background-size: cover;
+}
+.cont3 {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 2fr);
+  text-align: center;
+}
+
+.box img {
+  color: white;
+  height: 65px;
+  width: 65px;
+}
+.box-container {
+  padding-top: 14em;
+  margin: 0em 15em 0em auto;
+  text-align: right;
+  width: 37vw;
+  /* border: 1px solid yellow; */
+}
+.box {
+  padding-top: 4em;
+  color: white;
+  width: 200px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+#sizing {
+  margin-top: 0.9em;
+  font-size: 1.2em;
+}
+
+.grid-align #p-flot {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  color: white;
+}
+.grid-align #p-flot a {
+  color: white;
+}
+
+/* Style for Section 4 */
+.container4 {
+  height: 120vh;
+  width: 100vw;
+}
+.item1 {
+  width: 425px;
+  height: 440px;
+}
+.item1 img {
+  width: 425px;
+  height: 440px;
+  object-fit: cover;
+}
+.grid-box {
+  margin: auto;
+  width: 75vw;
+}
+.cont4 {
+  text-align: center;
+  margin-top: 7em;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  /* border: 1px solid red; */
+}
+
+/* Creating Responsive for Mobile */
+@media screen and (max-width: 400px) {
+  body {
+    box-sizing: border-box;
+  }
+  /* Section1 */
+  /* .container1 {
+    width: 100vw;
+    min-height: 100vh;
+  } */
+  /* .background-img {
+    background-image: url("images/pexels-vaibhav-jadhav-3218467.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  } */
+  /* .items #svg {
+    top: -100px;
+    left: 180px;
+  } */
+  .items h1 {
+    font-size: 2.6rem;
+    color: white;
+    margin-top: 100px;
+  }
+  .items p {
+    margin: auto;
+    width: 86vw;
+    font-size: 1.1em;
+    color: white;
+    padding: 20px;
+  }
+
+  /* Section2 */
+  .container2 {
+    height: 116vh;
+  }
+  .container2 #head {
+    padding-top: 3em;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+  }
+  .container2 h1 {
+    font-size: 2.6rem;
+    margin-top: 0.4em;
+  }
+  .item {
+    width: 96%;
+    margin: 9px;
+  }
+  .item .heading {
+    font-size: 1.25em;
+    margin: 1em 0 0.5em 0;
+    font-family: "Lato", sans-serif;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+
+  /* section3 */
+  .grid-align {
+    width: 100vw;
+    height: 100vh;
+    background: url("images/ed-min.jpg");
+    background-size: cover;
+  }
+  .cont3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
